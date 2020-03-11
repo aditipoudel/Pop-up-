@@ -1,0 +1,110 @@
+
+body{ 
+    margin:100px;
+    position: relative;
+
+}
+body.pop-up{
+    background:#333;
+
+}
+
+
+body{
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', 'serif';
+    font-weight: normal;
+    color:skyblue;   
+    margin-bottom: 20px;
+}
+.panda {
+width: 600px;
+height: 200px;
+}
+
+h1{
+    font-size: 48px;
+    margin:10px 0;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+#pop-up{
+    position: relative;
+    top: 100px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#pop-up.container{
+    background: #f0e4d4;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#pop-up input{
+    padding: 10px;
+    border:0;
+    border-radius: 10px 0 0 10px;
+    border:1px solid #333;
+    font-size: 18px;
+
+}
+button{
+    padding: 12px;
+    border:0;
+    color: #333;
+    margin-left: -3px;
+    margin-left: -3px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #333;
+    font-size: 18px;
+}
+.cross{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: pink;
+    color: #333;
+    font-weight: bold;
+    width: 22px;
+    height: 22px; 
+    text-align: center;
+    border-radius: 11px;
+}
+
+#pop-up
+{
+    top:-750px;
+    transform-origin:50px 50px;
+    animation: drop 0.5 ease forwards, swing 2s 3s ease forwards;
+
+}
+
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(700px)}
+    100%{transform: translateY(650px);  opacity: 1;}
+}
+@keyframes swing{
+    0%{
+        transform: translateY(650px) rotateZ(0deg)
+    }
+    40%{
+        transform: translateY(650px) rotateZ(27deg)
+    }
+    70%{
+        transform: translateY(650px) rotateZ(20deg)   
+    }
+    100%{
+    transform: translateY(650px) rotateZ(22deg)
+}
+
+}
+
